@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	-->
+	<title>Harry Potter</title>
+	<link rel="stylesheet" href="style.css">
+
+</head> 
+<body>
+	<div class="navBar">
+		<a href="contacto.html">Contacto</a>
+		<a href="index.html">
+			<h1>Harry Potter Characters</h1>
+		</a>		<a href="about.html">Sobre Nosotros</a>	
+	</div>
+	<div class="content">
+			<div class="col-2b">
+				<div class="selectores">
+					<div class="ordenProductos">
+						<h2>Ordenar </h2>
+						<select id="orden">
+							<option value="nombreAscendente">A-Z</option>
+							<option value="nombreDescendente">Z-A</option>
+							<option value="precioAscendente">Menor edad</option>
+							<option value="precioDescendente">Mayor edad</option>
+						</select>
+					</div>
+					<div class="cantidadAMostrar">
+						<h2>Elementos por página </h2>
+						<select id="elementos">
+							<option value="10">10</option>
+							<option value="50">50</option>
+							<option value="100">100</option>
+							<option value="200">200</option>
+							<option value="403">All</option>
+						</select>
+					</div>	
+				</div>		
+				<div id="listaProductos">
+					<div class="producto">
+						<a href="producto.html">
+							<img src="http://hp-api.herokuapp.com/images/harry.jpg">
+						</a>
+						<div>
+							<h2><a href="personaje.html">Nombre</a></h2>
+							<div>
+								<h3>Casa</h3>
+							</div>
+							<div>
+								<h3>Año de nacimiento</h3>
+								<h3>1950</h3>
+							</div>
+							<div>
+								<button id="1">Ver más</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="main.js"></script>
+</html>
